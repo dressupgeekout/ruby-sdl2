@@ -36,6 +36,7 @@ def sdl2config_on_mingw
   have_library("mingw32")
   have_library("SDL2")
   add_libs("-mwindows")
+  add_cflags("-IC:/Ruby26-x64/msys64/usr/include/SDL2")
 end
 
 case RbConfig::CONFIG["arch"]
